@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Urna Eletrônica</title>
+</head>
+<body>
+    <div class="urna">
+        <div class="tela">
+            <div class="divisao-1">
+                <div class="divisao-1-left">
+                    <div class="text-voto">
+                        <span>Seu voto para</span>
+                    </div>
+                    <div class="cargo">
+                        <span>vereador</span>
+                    </div>
+                    <div class="numero">
+                        <div class="digito"></div>
+                    </div>
+                    <div class="info-canditado">
+                    </div>
+                </div>
+                <div class="divisao-1-right">
+                    <div class="images-cand">
+                        <img src="" alt="">
+                    </div>
+                    <div class="images-cand">
+                        <img src="" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="divisao-2">
+                Aperte a tecla:<br>
+                <strong>CONFIRMA</strong> para <strong>CONFIRMAR</strong> este voto<br>
+                <strong>CORRIGE</strong> para <strong>REINICIAR</strong> este voto
+            </div>
+        </div>
+        <div class="teclado">
+            <div class="teclado-numerico">
+                <div class="numeros" onclick="clicou(1)">1</div>
+                <div class="numeros" onclick="clicou(2)">2</div>
+                <div class="numeros" onclick="clicou(3)">3</div>
+                <div class="numeros" onclick="clicou(4)">4</div>
+                <div class="numeros" onclick="clicou(5)">5</div>
+                <div class="numeros" onclick="clicou(6)">6</div>
+                <div class="numeros" onclick="clicou(7)">7</div>
+                <div class="numeros" onclick="clicou(8)">8</div>
+                <div class="numeros" onclick="clicou(9)">9</div>
+                <div class="numeros" onclick="clicou(0)">0</div>
+
+            </div>
+            <div class="secundarios">
+                <button id="branco" onclick="branco()">branco</button>
+                <button id="corrige" onclick="corrige()">corrige</button>
+                <button id="confirmar" onclick="confirmar()">confirmar</button>
+            </div>
+        </div>
+    </div>
+    <script src="jsonEtapas.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
